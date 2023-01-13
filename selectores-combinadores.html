@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selesctores combinadores</title>
+    <style>
+        div p {
+            color: lightgreen; /*Con este selector se le da color a la letra*/
+        }
+        div > div {
+    background: plum; /*Este selector es para el hijo directo*/
+        }
+        .hijo directo {
+            background:aquamarine;
+        }
+        div + section{
+            background: palevioletred;
+        }
+        div ~ p{
+            color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Ejemplo de selectores combinadores</h1></header>
+   
+        <div>
+            <p>Descendientes --> div p</p> 
+        </div> 
+       
+        <div>
+            <p>Ejemplo</p>
+            <div class="hijo directo">Hijo directo --> div > p</div>
+        </div>
+
+        <section>
+            <p>Elemento adyacente --> div + p</p>
+        </section>
+
+        <div>
+            <p>General de hermanos --> div ~ p</p>
+        </div>     
+    
+</body>
+</html>
+
+
+
+
+
+
